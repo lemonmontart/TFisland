@@ -29,7 +29,7 @@ export default function LandPage({ navigation }) {
 
       {/* 주택 추가 버튼 */}
       <TouchableOpacity style={styles.addButton} onPress={handleAddHouse}>
-        <Text style={styles.addButtonText}>주택 추가</Text>
+        <Text style={styles.addButtonText}>+</Text>
       </TouchableOpacity>
     </View>
   );
@@ -60,11 +60,16 @@ const styles = StyleSheet.create({
     position: 'absolute',
     right: 20,
     bottom: 20,
+    width: 60,
+    height: 60,
+    justifyContent: 'center',
+    alignItems: 'center',
     padding: 10,
     backgroundColor: '#006400',
-    borderRadius: 5,
+    borderRadius: 30,
   },
   addButtonText: {
     color: 'white',
+    fontSize: 30,
   },
 });
